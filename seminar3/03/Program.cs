@@ -11,6 +11,6 @@ while (index<=N)
 }
 double Cube(int a, int b)
 {
-    double cube=Math.Pow(a,3);
+    double cube=Math.Pow(a,b);
     return cube;
 }
