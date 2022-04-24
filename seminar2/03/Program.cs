@@ -19,5 +19,3 @@ else
     Console.WriteLine("да,"+week[day - 1]+" это выходной");
     }
 } 
-
-
