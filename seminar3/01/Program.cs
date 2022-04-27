@@ -14,7 +14,7 @@ else
 
 void Reshenie (string massive)
 {
-    if (massive[0]==massive[4]||massive[1]==massive[3])
+    if (massive[0]==massive[4]&&massive[1]==massive[3])
     {
         Console.WriteLine(chislo+" является палиндромом");
     }
