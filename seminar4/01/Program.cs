@@ -3,11 +3,15 @@ Console.Write("Введите число A: ");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число B: ");
 int b = Convert.ToInt32(Console.ReadLine());
-int index = 1;
-int stepen=1;
-while (index<=b)
+int stepen = 1;
+Console.WriteLine($"{a} в {b} степени равняется {Stepen(a,b)}");
+
+
+int Stepen(int x,int y)
 {
-    stepen=stepen*a;
-    index++;
+    for (int i = 1; i <= y; i++)
+    {
+        stepen = stepen * x;
+    }
+    return stepen;
 }
-Console.WriteLine(stepen);
