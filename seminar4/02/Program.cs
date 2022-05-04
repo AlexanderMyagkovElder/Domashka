@@ -2,10 +2,10 @@
 452 -> 11  82 -> 10   9012 -> 12*/
 Console.Write("Введите число: ");
 int chislo = Convert.ToInt32(Console.ReadLine());
-string chisloMassive = Convert.ToString(chislo);
 int sum = 0;
-for (int i = 0; i < chisloMassive.Length; i++)
+while (chislo>0)
 {
-    sum = sum + Convert.ToInt32(chisloMassive[i].ToString());
+    sum=sum+chislo%10;
+    chislo=chislo/10;    
 }
 Console.WriteLine(sum);
