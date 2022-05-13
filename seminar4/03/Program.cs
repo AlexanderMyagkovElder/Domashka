@@ -4,10 +4,18 @@
 
 Console.WriteLine("Введите ряд чисел через запятую: ");
 string vvodimoe = Convert.ToString(Console.ReadLine());
-Console.Write("{");
+string vyvod = string.Empty;
 for (int i = 0; i < vvodimoe.Length; i++)
 {
-    if (vvodimoe[i]==',') continue;
-    else Console.Write(vvodimoe[i]+" ");
+    if (vvodimoe[i]==',') 
+    {
+        vyvod=vyvod+", ";
+    }
+    else vyvod=vyvod+vvodimoe[i];
+}
+Console.Write("{");
+for (int i = 0; i < vyvod.Length; i++)
+{
+    Console.Write(vyvod[i]);
 }
 Console.Write("}");
