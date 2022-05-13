@@ -3,7 +3,7 @@
 6, 1, 33 -> [6, 1, 33] */
 
 Console.WriteLine("Введите ряд чисел через запятую: ");
-string vvodimoe = Convert.ToString(Console.ReadLine());
+string? vvodimoe = Console.ReadLine();
 string vyvod = string.Empty;
 for (int i = 0; i < vvodimoe.Length; i++)
 {
