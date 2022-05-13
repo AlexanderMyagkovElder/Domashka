@@ -5,7 +5,7 @@
 Console.WriteLine("Введите ряд чисел через запятую: ");
 string? vvodimoe = Console.ReadLine();
 string vyvod = string.Empty;
-for (int i = 0; i < vvodimoe.Length; i++)
+for (int i = 0; i < vvodimoe?.Length; i++)
 {
     if (vvodimoe[i]==',') 
     {
