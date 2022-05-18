@@ -14,14 +14,14 @@ for (int i = 0; i < m; i++)
     {
         //ввожу переменную, чтобы случайно увеличивать вещественный рандом
         int unknownVariable=new Random().Next(-10,10); 
-        massive[i,j]=(Math.Round(new Random().NextDouble(),1))*unknownVariable;
+        massive[i,j]=(new Random().NextDouble())*unknownVariable;
     }
 }
 for (int i = 0; i < m; i++)
 {
     for (int j = 0; j < n; j++)
     {
-        Console.Write(massive[i,j]+"   ");
+        Console.Write(Math.Round(massive[i,j],1)+"   ");
     }
     Console.WriteLine();
 }
