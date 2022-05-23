@@ -14,14 +14,18 @@ Console.Write("Введите позицию элемента: ");
 int position=Convert.ToInt32(Console.ReadLine());
 if (position<10||position>99)
     Console.WriteLine("Введите двузначное число!");
-int stroka=position/10;
-int stolbec=position%10;
-if (stroka>m||stolbec>n)
+else
+{
+    int stroka=position/10;
+    int stolbec=position%10;
+    if (stroka>m||stolbec>n)
     {
         Console.Write("Такого числа в массиве нет");
     }
     
-else Console.Write($"Числом на позиции {position} является {massive[stroka-1,stolbec-1]}");
+    else Console.Write($"Числом на позиции {position} является {massive[stroka-1,stolbec-1]}");
+}
+
 void GetArray(int[,]array)
 {
     for (int i = 0; i < m; i++)
