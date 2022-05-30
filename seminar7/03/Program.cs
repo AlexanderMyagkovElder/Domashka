@@ -19,7 +19,7 @@ Console.WriteLine();
 for (int k = 0; k < sum.Length; k++)
     {
         double middleArithmetic=Math.Round(sum[k]/m,1);
-        Console.Write(middleArithmetic+"   ");
+        Console.Write($"{middleArithmetic,-7}");
     }
     Console.WriteLine();
 
@@ -30,7 +30,7 @@ void GetArray(int[,]array)
         for (int j = 0; j < n; j++)
         {
             massive[i,j]=new Random().Next(0,10);
-            Console.Write(massive[i,j]+"   ");
+            Console.Write($"{massive[i,j],-7}");
         }
         Console.WriteLine();
     }
